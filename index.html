@@ -5,14 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Timer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for the big red text */
+        .countdown-container {
+            position: relative; /* Ensure positioning context for absolute positioning */
+        }
+
+        .big-red-text {
+            position: absolute;
+            top: 50%; /* Position the text vertically centered */
+            left: 50%; /* Position the text horizontally centered */
+            transform: translate(-50%, -50%); /* Center the text precisely */
+            color: red; /* Set text color to red */
+            font-size: 2rem; /* Set font size to 2rem (adjust as needed) */
+            font-weight: bold; /* Optionally set font weight to bold */
+            z-index: 1; /* Ensure the text is above the countdown timer */
+        }
+    </style>
 </head>
 <body>
-    <div id="countdown">
-        <span id="days"></span> Days
-        <span id="hours"></span> Hours
-        <span id="minutes"></span> Minutes
-        <span id="seconds"></span> Seconds
+    <div class="countdown-container">
+        <!-- Big red text -->
+        <h1 class="big-red-text">Hurry Up! Limited Time Offer!</h1>
+        
+        <!-- Countdown timer -->
+        <div id="countdown">
+            <span id="days"></span> Days 
+            <span id="hours"></span> Hours 
+            <span id="minutes"></span> Minutes 
+            <span id="seconds"></span> Seconds
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
+
