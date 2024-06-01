@@ -9,16 +9,18 @@
         /* Additional CSS for the big red text */
         .countdown-container {
             position: relative; /* Ensure positioning context for absolute positioning */
+            text-align: center; /* Center-align the text */
         }
 
         .big-red-text {
             position: absolute;
-            top: 50%; /* Position the text vertically centered */
+            top: 20%; /* Adjust the top position as needed */
             left: 50%; /* Position the text horizontally centered */
-            transform: translate(-50%, -50%); /* Center the text precisely */
+            transform: translateX(-50%); /* Center the text horizontally */
             color: red; /* Set text color to red */
-            font-size: 2rem; /* Set font size to 2rem (adjust as needed) */
+            font-size: 3rem; /* Set font size to 3rem (adjust as needed) */
             font-weight: bold; /* Optionally set font weight to bold */
+            font-family: 'Arial', sans-serif; /* Use a nicer font */
             z-index: 1; /* Ensure the text is above the countdown timer */
         }
     </style>
@@ -26,7 +28,7 @@
 <body>
     <div class="countdown-container">
         <!-- Big red text -->
-        <h1 class="big-red-text">Hurry Up! Limited Time Offer!</h1>
+        <h1 class="big-red-text">Dafna I Love You</h1>
         
         <!-- Countdown timer -->
         <div id="countdown">
@@ -40,5 +42,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
