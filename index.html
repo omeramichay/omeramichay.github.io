@@ -6,21 +6,36 @@
     <title>Countdown Timer</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional CSS for the big red text */
+        /* Additional CSS for the page */
+        body {
+            background-color: black; /* Set background color of the entire page to black */
+            color: white; /* Set text color to white */
+            font-family: Arial, sans-serif; /* Use a default font for text */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Additional CSS for the countdown container */
         .countdown-container {
             position: relative; /* Ensure positioning context for absolute positioning */
             text-align: center; /* Center-align the text */
+            width: 100%; /* Make the container span the entire width */
+            padding-top: 100px; /* Add some padding from the top */
         }
 
         .big-red-text {
             position: absolute;
-            top: -2000px; /* Adjust the top position as needed */
+            top: -200px; /* Adjust the top position as needed */
             left: 50%; /* Position the text horizontally centered */
             transform: translateX(-50%); /* Center the text horizontally */
             color: red; /* Set text color to red */
-            font-size: 40px; /* Set font size to 40px */
+            font-size: 130px; /* Set font size to 100px */
             font-weight: bold; /* Set font weight to bold */
             font-family: 'Dancing Script', cursive; /* Use a decorative font */
+            white-space: nowrap; /* Prevent text from wrapping */
+            background-color: black; /* Set background color to black */
+            padding: 20px; /* Add padding around the text */
+            border-radius: 10px; /* Add border radius for rounded corners */
             z-index: 1; /* Ensure the text is above the countdown timer */
         }
     </style>
@@ -30,13 +45,13 @@
 <body>
     <div class="countdown-container">
         <!-- Big red text -->
-        <h1 class="big-red-text">Dafna I Love You!!!</h1>
-        
+        <h1 class="big-red-text">Get Ready!</h1>
+
         <!-- Countdown timer -->
         <div id="countdown">
-            <span id="days"></span> Days 
-            <span id="hours"></span> Hours 
-            <span id="minutes"></span> Minutes 
+            <span id="days"></span> Days
+            <span id="hours"></span> Hours
+            <span id="minutes"></span> Minutes
             <span id="seconds"></span> Seconds
         </div>
     </div>
