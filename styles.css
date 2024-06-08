@@ -1,22 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: black; /* Set the background color to black */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    color: red; /* Set text color to red */
 }
 
-#countdown {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 2rem;
-    text-align: center;
+.countdown-container {
+    text-align: center; /* Center-align the text */
+    font-size: 140px; /* Set font size to 100 */
+	font-family: 'Cookie', cursive;
+    color: red; /* Text color red */
 }
 
-#countdown span {
-    margin: 0 10px;
-}
+/* Ensure you have the font loaded in your HTML */
