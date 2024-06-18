@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -20,3 +20,24 @@ body {
 #countdown span {
     margin: 0 10px;
 }
+ */
+
+body {
+    background-color: black; /* Set the background color to black */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: red; /* Set text color to red */
+}
+
+.countdown-container {
+    text-align: center; /* Center-align the text */
+    font-size: 140px; /* Set font size to 100 */
+	font-family: 'Cookie', cursive;
+    color: red; /* Text color red */
+}
+
+/* Ensure you have the font loaded in your HTML */
